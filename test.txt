@@ -1,0 +1,753 @@
+<?xml version="1.0"?>
+<Root>
+	<LcCode code="PL">
+		<System type="0">
+			<FirstLevel id="90" Module="1" title="账户中心" Verification="" nameabbr="zhzx" ModulePic="zhzx.png" dll="FIS.Futures.V8S.Account.dll" namespace="">
+				<SecondLevel id="9001" title="客户开户" Verification="" nameabbr="khkhgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="900101" title="经纪商开户" Verification="" nameabbr="jjskh" class="FIS.Futures.V8S.Account.MemberOpenAccount" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="900102" title="投资者开户" Verification="" nameabbr="tzzkh" class="FIS.Futures.V8S.Account.InvestorOpenAccount" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="2"/>
+					</ThirdLevel>
+					<ThirdLevel id="900103" title="开设风控单元" Verification="" nameabbr="ksfkdy" class="FIS.Futures.V8S.Account.SubOpenAccount" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="3"/>
+					</ThirdLevel>
+					<ThirdLevel id="900104" title="批量开设风控单元" Verification="" nameabbr="plksfkdy" class="FIS.Futures.V8S.Account.SubOpenAccountBatch" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="4"/>
+					</ThirdLevel>
+					<ThirdLevel id="900105" title="OTC开户" Verification="" nameabbr="otckh" class="FIS.Futures.V8S.Account.OTCOpenAccount" formproperty="" namespace="FIS.Futures.V8S.Account">
+					  <Permission index="5"/>
+					</ThirdLevel>
+					<ThirdLevel id="900106" title="境外特参开户" Verification="" nameabbr="jwtckh" class="FIS.Futures.V8S.Account.OutEsJoinOpenAccount" formproperty="" namespace="FIS.Futures.V8S.Account">
+					  <Permission index="6"/>
+					</ThirdLevel>
+					<ThirdLevel id="900107" title="境外中介开户" Verification="" nameabbr="jwzjkh" class="FIS.Futures.V8S.Account.OutMediOpenAccount" formproperty="" namespace="FIS.Futures.V8S.Account">
+					  <Permission index="7"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9002" title="帐户信息" Verification="" nameabbr="zhxx" class="" formproperty="" namespace="">
+					<ThirdLevel id="900201" title="客户基础资料设置" Verification="" nameabbr="khjczlsz" class="FIS.Futures.V8S.Account.CustomerDetailSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="8"/>
+					</ThirdLevel>
+					<ThirdLevel id="900202" title="资金账户设置" Verification="" nameabbr="zjzhsz" class="FIS.Futures.V8S.Account.FundAccountSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="9"/>
+					</ThirdLevel>
+					<ThirdLevel id="900203" title="银行账户设置" Verification="" nameabbr="yhzhsz" class="FIS.Futures.V8S.Account.BankAccountSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="10"/>
+					</ThirdLevel>
+					<ThirdLevel id="900204" title="交易账户设置" Verification="" nameabbr="jyzhsz" class="FIS.Futures.V8S.Account.TradeAccountSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="11"/>
+					</ThirdLevel>
+					<ThirdLevel id="900205" title="联系人设置" Verification="" nameabbr="lxrsz" class="FIS.Futures.V8S.Account.LinkManSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="12"/>
+					</ThirdLevel>			
+					<ThirdLevel id="900206" title="自然人扩展资料" Verification="" nameabbr="zrrkzzlsz" class="FIS.Futures.V8S.Account.PersonSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="13"/>
+					</ThirdLevel>					
+					<ThirdLevel id="900207" title="法人扩展资料" Verification="" nameabbr="frkzzlsz" class="FIS.Futures.V8S.Account.CorporationSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="14"/>
+					</ThirdLevel>			
+					
+					<ThirdLevel id="900208" title="风控单元层级关系" Verification="" nameabbr="frdycjgx" class="FIS.Futures.V8S.Account.SubCascadeQuery" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="15"/>
+					</ThirdLevel>
+														
+				</SecondLevel>
+				<SecondLevel id="9006" title="客户交易限制" Verification="" nameabbr="khjysz" class="" formproperty="" namespace="">
+					<ThirdLevel id="900606" title="客户登录站点" Verification="" nameabbr="khdlzd" class="FIS.Futures.V8S.Account.ClientStationSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="16"/>
+					</ThirdLevel>
+					<ThirdLevel id="900608" title="客户交易权限" Verification="" nameabbr="khjyqx" class="FIS.Futures.V8S.Account.ClientPermissionRelation" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="17"/>
+					</ThirdLevel>
+					<ThirdLevel id="900609" title="客户交易权限模板" Verification="" nameabbr="khjyqxmb" class="FIS.Futures.V8S.Account.PermissionTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="18"/>
+					</ThirdLevel>
+					<ThirdLevel id="900610" title="客户风险预警线" Verification="" nameabbr="khfxyjx" class="FIS.Futures.V8S.Account.ClientRiskSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="19"/>
+					</ThirdLevel>
+					<ThirdLevel id="900611" title="客户期权交易管理" Verification="" nameabbr="khqqjygl" class="FIS.Futures.V8S.Account.OptionPermissionSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="20"/>
+					</ThirdLevel>
+					<ThirdLevel id="900612" title="客户保值套利额度" Verification="" nameabbr="khbztled" class="FIS.Futures.V8S.Account.ClientNumLimitSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="21"/>
+					</ThirdLevel>
+					<ThirdLevel id="900613" title="客户品种交易限制" Verification="" nameabbr="khpzjyxz" class="FIS.Futures.V8S.Account.ClientTypeLimitSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="22"/>
+					</ThirdLevel>
+					<ThirdLevel id="900614" title="客户合规交易控制" Verification="" nameabbr="khhgjykz" class="FIS.Futures.V8S.Account.ClientComplianceLimitSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="23"/>
+					</ThirdLevel>
+					<ThirdLevel id="900615" title="客户交易合约限制" Verification="" nameabbr="khjyhyxz" class="FIS.Futures.V8S.Account.ClientContractLimitSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="24"/>
+					</ThirdLevel>
+					<ThirdLevel id="900616" title="客户密码重置" Verification="" nameabbr="khmmcz" class="FIS.Futures.V8S.Account.ClientPasswordReset" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="35"/>
+					</ThirdLevel>
+					<ThirdLevel id="930710" title="客户密码规则设置" Verification="" nameabbr="khmmgzsz" class="FIS.Futures.V8S.Manage.ClientPasswordRegularSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="36"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9007" title="客户销户" Verification="" nameabbr="khxhgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="900701" title="客户销户" Verification="" nameabbr="khxh" class="FIS.Futures.V8S.Account.AccountClose" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="26"/>
+					</ThirdLevel>
+				</SecondLevel>	
+				<SecondLevel id="9011" title="客户资金权限" Verification="" nameabbr="khzjqx" class="" formproperty="" namespace="">
+					<ThirdLevel id="901101" title="转账权限设置" Verification="" nameabbr="zzqxsz" class="FIS.Futures.V8S.Account.TransferPermission" formproperty="" namespace="FIS.Futures.V8S.Account">
+						<Permission index="40"/>
+					</ThirdLevel>
+				</SecondLevel>	
+			</FirstLevel>
+			
+			<FirstLevel id="91" Module="2" title="资金中心" Verification="" nameabbr="zjzx" ModulePic="zjzx.png" dll="FIS.Futures.V8S.Fund.dll" namespace="">
+				<SecondLevel id="9101" title="客户资金管理" Verification="" nameabbr="khzjgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="910101" title="柜台出入金" Verification="" nameabbr="gtcrj" class="FIS.Futures.V8S.Fund.CustomerFundSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="1"/>
+					    <Permission index="2"/>
+					    <Permission index="3"/>
+					    <Permission index="4"/>
+					    <Permission index="5"/>
+					    <Permission index="6"/>					    
+					</ThirdLevel>
+					<ThirdLevel id="910103" title="资金变动明细" Verification="" nameabbr="zjbdmx" class="FIS.Futures.V8S.Fund.FundChangeDetailQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="7"/>	
+					</ThirdLevel>
+					<ThirdLevel id="910104" title="资金变动汇总" Verification="" nameabbr="zjbdhz" class="FIS.Futures.V8S.Fund.FundChangeSummaryQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="8"/>
+					</ThirdLevel>
+					<ThirdLevel id="910105" title="资金调拨" Verification="" nameabbr="zjdb" class="FIS.Futures.V8S.Fund.FundTransferSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="9"/>
+					    <Permission index="10"/>
+					    <Permission index="11"/>
+					    <Permission index="12"/>
+					    <Permission index="13"/>
+					    <Permission index="14"/>	
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9102" title="席位资金管理" Verification="" nameabbr="xwzjgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="910201" title="席位出入金" Verification="" nameabbr="xwcrj" class="FIS.Futures.V8S.Fund.SeatFundSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="15"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+				<SecondLevel id="9104" title="质押管理" Verification="" nameabbr="xwzjgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="910401" title="质押品种" Verification="" nameabbr="zypz" class="FIS.Futures.V8S.Fund.PledgeProductSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="25"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="910402" title="质押明细" Verification="" nameabbr="zymx" class="FIS.Futures.V8S.Fund.PledgeDetailSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="26"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="910403" title="货币质押客户折扣率" Verification="" nameabbr="hbzykhzkl" class="FIS.Futures.V8S.Fund.PledgeCuDisRateSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="27"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="910404" title="货币质押席位折扣率" Verification="" nameabbr="hbzyxwzkl" class="FIS.Futures.V8S.Fund.PledgeSeatDisRateSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="28"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="910405" title="客户货币质入" Verification="" nameabbr="khhbzr" class="FIS.Futures.V8S.Fund.PledgeCuMoneyInSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="29"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="910406" title="客户货币解质" Verification="" nameabbr="khhbjz" class="FIS.Futures.V8S.Fund.PledgeCuMoneyOutSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="30"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="910407" title="席位货币质入" Verification="" nameabbr="xwhbzr" class="FIS.Futures.V8S.Fund.PledgeSeatMoneyInSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="31"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="910408" title="席位货币解质" Verification="" nameabbr="xwhbjz" class="FIS.Futures.V8S.Fund.PledgeSeatMoneyOutSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="32"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+				<SecondLevel id="9106" title="利率方案" Verification="" nameabbr="szllfa" class="" formproperty="" namespace="">
+					<ThirdLevel id="910604" title="设置席位利率" Verification="" nameabbr="szxwll" class="FIS.Futures.V8S.Fund.SeatInterestSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="33"/>
+					</ThirdLevel>
+					<ThirdLevel id="910603" title="设置公司利率" Verification="" nameabbr="szgsll" class="FIS.Futures.V8S.Fund.CompanyInterestSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="34"/>					   
+					</ThirdLevel>
+					<ThirdLevel id="910601" title="设置客户利率" Verification="" nameabbr="szkhll" class="FIS.Futures.V8S.Fund.CustomerInterestSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="35"/>
+					</ThirdLevel>
+					<ThirdLevel id="910602" title="设置利率模板" Verification="" nameabbr="szllmb" class="FIS.Futures.V8S.Fund.InterestTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="36"/>
+					</ThirdLevel>
+					<ThirdLevel id="910605" title="设置客户与利率模板对应关系" Verification="" nameabbr="szkhyllmbdygx" class="FIS.Futures.V8S.Fund.CustomerInterestTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="37"/>
+					</ThirdLevel>					
+					<ThirdLevel id="910606" title="查询利息明细" Verification="" nameabbr="cxlxmx" class="FIS.Futures.V8S.Fund.InterestDetailQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="38"/>
+					</ThirdLevel>					
+					<ThirdLevel id="910607" title="查询利息汇总" Verification="" nameabbr="cxlxhz" class="FIS.Futures.V8S.Fund.InterestTotalQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="39"/>
+					</ThirdLevel>					
+				</SecondLevel>
+				<SecondLevel id="9107" title="汇率信息" Verification="" nameabbr="zjsz" class="" formproperty="" namespace="">
+					<ThirdLevel id="910701" title="汇率设置" Verification="" nameabbr="hlsz" class="FIS.Futures.V8S.Fund.ForexRateSet" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="40"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9108" title="银期设置" Verification="" nameabbr="yqxxgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="910801" title="银期业务查询" Verification="" nameabbr="yqyycx" class="FIS.Futures.V8S.Fund.TransferQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="910802" title="单边账调整" Verification="" nameabbr="dbztz" class="FIS.Futures.V8S.Fund.UnilateralAdjust" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="2"/>
+					</ThirdLevel>
+					<ThirdLevel id="910803" title="银行对账" Verification="" nameabbr="yhdz" class="FIS.Futures.V8S.Fund.BankReconcile" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="3"/>
+					</ThirdLevel>
+					<ThirdLevel id="910804" title="银行对账查询" Verification="" nameabbr="yhdzcx" class="FIS.Futures.V8S.Fund.BankReconcileQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="4"/>
+					</ThirdLevel>
+					<ThirdLevel id="910805" title="预约出金拒绝原因查询" Verification="" nameabbr="yycjjjyycx" class="FIS.Futures.V8S.Fund.RefuseReasonQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="5"/>
+					</ThirdLevel>
+					<ThirdLevel id="910806" title="预约出金查询" Verification="" nameabbr="yycjcx" class="FIS.Futures.V8S.Fund.ReservedepositQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="6"/>
+					</ThirdLevel>
+					<ThirdLevel id="910807" title="银期资料查询" Verification="" nameabbr="yqzlcx" class="FIS.Futures.V8S.Fund.BankInfoQuery" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="7"/>
+					</ThirdLevel>				
+				</SecondLevel>
+				<SecondLevel id="9109" title="银期转账" Verification="" nameabbr="yqzzgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="910901" title="银期帐号开户" Verification="" nameabbr="yqzhkh" class="FIS.Futures.V8S.Fund.BankAccountOpen" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="910902" title="银期帐号销户" Verification="" nameabbr="yqzhxh" class="FIS.Futures.V8S.Fund.BankAccountClose" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="2"/>
+					</ThirdLevel>
+					<ThirdLevel id="910903" title="银期转账" Verification="" nameabbr="yqzz" class="FIS.Futures.V8S.Fund.BankTransfer" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="3"/>
+					</ThirdLevel>
+					<ThirdLevel id="910904" title="预约出金风险监控" Verification="" nameabbr="yycjfxjk" class="FIS.Futures.V8S.Fund.RiskControl" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="4"/>
+					</ThirdLevel>
+					<ThirdLevel id="910905" title="预约出金财务监控" Verification="" nameabbr="yycjcwjk" class="FIS.Futures.V8S.Fund.FinanceControl" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="5"/>
+					</ThirdLevel>
+					<ThirdLevel id="910906" title="转账监控" Verification="" nameabbr="zzjk" class="FIS.Futures.V8S.Fund.TransferMonitor" formproperty="" namespace="FIS.Futures.V8S.Fund">
+					    <Permission index="6"/>
+					</ThirdLevel>					
+				</SecondLevel>
+			</FirstLevel>
+			
+			<FirstLevel id="92" Module="3" title="结算中心" Verification="" nameabbr="jszx" ModulePic="jszx.png" dll="FIS.Futures.V8S.Settlement.dll" namespace="">
+				<SecondLevel id="9201" title="日终结算" Verification="" nameabbr="rzjs" class="" formproperty="" namespace="">
+					<ThirdLevel id="920101" title="结算文件导入" Verification="" nameabbr="jswjdr" class="FIS.Futures.V8S.Settlement.SeatFileImport" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="920102" title="分项资金设置" Verification="" nameabbr="fxzjsz" class="FIS.Futures.V8S.Settlement.SubItemFundSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="2"/>
+					</ThirdLevel>
+					<ThirdLevel id="920103" title="成交单分配" Verification="" nameabbr="cjdfp" class="FIS.Futures.V8S.Settlement.TradedSign" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="3"/>
+					</ThirdLevel>
+					<ThirdLevel id="920104" title="期权行权结果分配" Verification="" nameabbr="qqxqjgfp" class="FIS.Futures.V8S.Settlement.OptionSign" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="4"/>
+					</ThirdLevel>
+	        <ThirdLevel id="920105" title="席位清算" Verification="" nameabbr="xwqs" class="FIS.Futures.V8S.Settlement.SeatSettle" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="5"/>
+					</ThirdLevel>
+					<ThirdLevel id="920106" title="客户结算" Verification="" nameabbr="khjs" class="FIS.Futures.V8S.Settlement.CustSettlement" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="6"/>
+					</ThirdLevel>
+					<ThirdLevel id="920107" title="席位对账" Verification="" nameabbr="xwdz" class="FIS.Futures.V8S.Settlement.SeatCheckSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="7"/>
+					</ThirdLevel>
+					<ThirdLevel id="920108" title="其他信息说明" Verification="" nameabbr="qtxxsm" class="FIS.Futures.V8S.Settlement.DescMessage" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="8"/>
+					</ThirdLevel>
+						<ThirdLevel id="920109" title="日终作业" Verification="" nameabbr="rzzy" class="FIS.Futures.V8S.Settlement.DailyEndOperation" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="9"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9202" title="费用设置" Verification="" nameabbr="fysz" class="" formproperty="" namespace="">
+					<ThirdLevel id="920201" title="席位费用设置" Verification="" nameabbr="xwfysz" class="FIS.Futures.V8S.Settlement.SeatFeeSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="23"/>
+					</ThirdLevel>
+					<ThirdLevel id="920202" title="公司费用设置" Verification="" nameabbr="gsfysz" class="FIS.Futures.V8S.Settlement.CompanyFeeSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="24"/>
+					</ThirdLevel>
+					<ThirdLevel id="920203" title="费用模板设置" Verification="" nameabbr="fymbsz" class="FIS.Futures.V8S.Settlement.FeeTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="25"/>
+					</ThirdLevel>
+					<ThirdLevel id="920204" title="客户与费用模板关系" Verification="" nameabbr="khyfymbgx" class="FIS.Futures.V8S.Settlement.CustomerFeeTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="26"/>
+					</ThirdLevel>
+					<ThirdLevel id="920205" title="客户费用设置" Verification="" nameabbr="khfysz" class="FIS.Futures.V8S.Settlement.CustomerFeeSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="27"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920206" title="费用科目设置" Verification="" nameabbr="fykmsz" class="FIS.Futures.V8S.Settlement.FeeCodeSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="41"/>
+					</ThirdLevel>
+					<ThirdLevel id="920207" title="批量查询客户当前费用" Verification="" nameabbr="plcxkhdqfy" class="FIS.Futures.V8S.Settlement.CustomerFeePatchQuery" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="42"/>
+					</ThirdLevel>
+					<ThirdLevel id="920208" title="查询客户当前费用明细" Verification="" nameabbr="cxkhdqfymx" class="FIS.Futures.V8S.Settlement.CustomerFeeDetailQuery" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="43"/>
+					</ThirdLevel>
+
+				</SecondLevel>
+				<SecondLevel id="9203" title="保证金设置" Verification="" nameabbr="bzjsz" class="" formproperty="" namespace="">
+					<ThirdLevel id="920301" title="席位保证金设置" Verification="" nameabbr="xwbzjsz" class="FIS.Futures.V8S.Settlement.SeatMarginSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="28"/>
+					</ThirdLevel>
+					<ThirdLevel id="920305" title="公司保证金设置" Verification="" nameabbr="gsbzjsz" class="FIS.Futures.V8S.Settlement.CompanyMarginSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="29"/>
+					</ThirdLevel>
+					<ThirdLevel id="920302" title="保证金模板设置" Verification="" nameabbr="bzjmbsz" class="FIS.Futures.V8S.Settlement.MarginTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="30"/>
+					</ThirdLevel>
+					<ThirdLevel id="920303" title="客户与保证金模板关系" Verification="" nameabbr="khybzjmbgx" class="FIS.Futures.V8S.Settlement.CustomerMarginTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="31"/>
+					</ThirdLevel>
+					<ThirdLevel id="920304" title="客户保证金设置" Verification="" nameabbr="khbzjsz" class="FIS.Futures.V8S.Settlement.CustomerMarginSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="32"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920306" title="批量查询客户当前保证金" Verification="" nameabbr="plcxkhdqbzj" class="FIS.Futures.V8S.Settlement.CustomerMarginPatchQuery" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="44"/>
+					</ThirdLevel>
+					<ThirdLevel id="920307" title="查询客户当前保证金明细" Verification="" nameabbr="cxkhdqbzjmx" class="FIS.Futures.V8S.Settlement.CustomerMarginDetailQuery" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="45"/>
+					</ThirdLevel>
+					
+				</SecondLevel>
+				<SecondLevel id="9204" title="结算价" Verification="" nameabbr="hyhq" class="" formproperty="" namespace="">
+					<ThirdLevel id="920406" title="每日结算价设置" Verification="" nameabbr="hymrjgsz" class="FIS.Futures.V8S.Settlement.ContractPriceDialySet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="33"/>
+					</ThirdLevel>
+					<ThirdLevel id="920407" title="交割结算价设置" Verification="" nameabbr="jgjsjsz" class="FIS.Futures.V8S.Settlement.DeliveryPriceSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="34"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9205" title="成交单" Verification="" nameabbr="cjd" class="" formproperty="" namespace="">
+					<ThirdLevel id="920501" title="期货成交单" Verification="" nameabbr="qhcjd" class="FIS.Futures.V8S.Settlement.TradedFuturesSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="35"/>
+					</ThirdLevel>
+					<ThirdLevel id="920502" title="期权成交单" Verification="" nameabbr="qqcjd" class="FIS.Futures.V8S.Settlement.TradedOptionSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="36"/>
+					</ThirdLevel>
+				
+				</SecondLevel>
+				<SecondLevel id="9206" title="OTC开仓单" Verification="" nameabbr="otccjd" class="" formproperty="" namespace="">
+					<ThirdLevel id="920601" title="OTC期货成交单" Verification="" nameabbr="otcqhcjd" class="FIS.Futures.V8S.Settlement.OTCTradedFutureSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					<Permission index="37"/>
+					</ThirdLevel>
+					<ThirdLevel id="920602" title="OTC期权开仓单" Verification="" nameabbr="otcqqkcd" class="FIS.Futures.V8S.Settlement.OTCTradedOptionSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					<Permission index="38"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920603" title="做市商组合" Verification="" nameabbr="zsszh" class="FIS.Futures.V8S.Settlement.OTCMMOptionCombine" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					     <Permission index="39"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920600" title="OTC期货成交单分配" Verification="" nameabbr="otcqhcjdfp" class="FIS.Futures.V8S.Settlement.OTCTradedFutureSign" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					<Permission index="40"/>
+					</ThirdLevel>
+					
+				</SecondLevel>
+				<SecondLevel id="9207" title="OTC持仓单" Verification="" nameabbr="otccjd" class="" formproperty="" namespace="">
+				
+					<ThirdLevel id="920702" title="OTC期权持仓" Verification="" nameabbr="otcqqcc" class="FIS.Futures.V8S.Settlement.OTCPositionOptionSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="41"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+					<SecondLevel id="9208" title="交割单" Verification="" nameabbr="jgd" class="" formproperty="" namespace="">
+				  
+					<ThirdLevel id="920802" title="手动交割单" Verification="" nameabbr="sdjgd" class="FIS.Futures.V8S.Settlement.ManualDeliverySet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="43"/>
+					</ThirdLevel>
+					<ThirdLevel id="920803" title="待交割单处理" Verification="" nameabbr="djgdcl" class="FIS.Futures.V8S.Settlement.DealDeliverySet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="44"/>
+					</ThirdLevel>
+					<ThirdLevel id="920804" title="交割单确认" Verification="" nameabbr="jgdqr" class="FIS.Futures.V8S.Settlement.ConfirmDeliverySet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="45"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920805" title="交割货款预测" Verification="" nameabbr="jghkyc" class="FIS.Futures.V8S.Settlement.PreDeliveryFeeSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="46"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920806" title="交割货款处理" Verification="" nameabbr="jghkcl" class="FIS.Futures.V8S.Settlement.DeliveryFeeSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="47"/>
+					</ThirdLevel>
+				</SecondLevel>
+					<SecondLevel id="9209" title="行权单" Verification="" nameabbr="xqd" class="" formproperty="" namespace="">
+				
+					<ThirdLevel id="920901" title="行权履约单" Verification="" nameabbr="xqlyd" class="FIS.Futures.V8S.Settlement.ExecuteSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="48"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920902" title="期权对冲" Verification="" nameabbr="qqdc" class="FIS.Futures.V8S.Settlement.HedgeOptionSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="49"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="920903" title="期货对冲" Verification="" nameabbr="qhdc" class="FIS.Futures.V8S.Settlement.HedgeFuturesSet" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					    <Permission index="50"/>
+					</ThirdLevel>
+				</SecondLevel>
+			</FirstLevel>
+			
+			<FirstLevel id="93" Module="4" title="管理中心" Verification="" nameabbr="glzx" ModulePic="glzx.png" dll="FIS.Futures.V8S.Manage.dll" namespace="">
+				<SecondLevel id="9301" title="操作员" Verification="" nameabbr="czy" class="" formproperty="" namespace="">
+					<ThirdLevel id="930101" title="操作员会话" Verification="" nameabbr="czyhy" class="FIS.Futures.V8S.Manage.OpeSessionQuery" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						<Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="930102" title="操作员设置" Verification="" nameabbr="czysz" class="FIS.Futures.V8S.Manage.OperatorSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						<Permission index="2"/>
+						
+					</ThirdLevel>
+					<ThirdLevel id="930103" title="部门设置" Verification="" nameabbr="bmsz" class="FIS.Futures.V8S.Manage.DepartmentSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="3"/>
+					</ThirdLevel>
+					<ThirdLevel id="930104" title="重置操作员密码" Verification=""  nameabbr="czczymm" class="FIS.Futures.V8S.Manage.PasswordChange" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="4"/>
+					</ThirdLevel>					
+					<ThirdLevel id="930709" title="操作员密码规则" Verification="" nameabbr="czymm" class="FIS.Futures.V8S.Manage.OperatorPasswordRegularSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="32"/>
+					</ThirdLevel>	
+				</SecondLevel>
+				<SecondLevel id="9302" title="授权管理" Verification="" nameabbr="sqgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="930201" title="设置角色" Verification="" nameabbr="szjs" class="FIS.Futures.V8S.Manage.RoleSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="5"/>
+					</ThirdLevel>
+					<ThirdLevel id="930202" title="操作员授权" Verification="" nameabbr="czysq" class="FIS.Futures.V8S.Manage.RoleForOperator" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="6"/>
+					</ThirdLevel>
+					<ThirdLevel id="930203" title="操作员特殊授权" Verification="" nameabbr="czytssq" class="FIS.Futures.V8S.Manage.SPRoleForOperator" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="7"/>
+					</ThirdLevel>
+					<ThirdLevel id="930204" title="授权复核" Verification="" nameabbr="sqfh" class="FIS.Futures.V8S.Manage.PromessionCheck" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="8"/>
+					</ThirdLevel>
+				    <ThirdLevel id="930206" title="操作员对应客户" Verification="" nameabbr="czydykh" class="FIS.Futures.V8S.Manage.OperatorClientSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="9"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+				<SecondLevel id="9304" title="业务中心" Verification="" nameabbr="ywzx" class="" formproperty="" namespace="">
+					<ThirdLevel id="930401" title="业务中心设置" Verification="" nameabbr="ywzxsz" class="FIS.Futures.V8S.Manage.BusinessCenterSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					<Permission index="10"/>
+					</ThirdLevel>
+					<ThirdLevel id="930402" title="业务中心对应客户" Verification="" nameabbr="ywzxdykh" class="FIS.Futures.V8S.Manage.BCClientSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					<Permission index="11"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+				<SecondLevel id="9305" title="交易品种设置" Verification="" nameabbr="jypzsz" class="" formproperty="" namespace="">
+					<ThirdLevel id="930501" title="期货品种设置" Verification="" nameabbr="qhpzsz" class="FIS.Futures.V8S.Manage.FuturesSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="13"/>
+					</ThirdLevel>
+					<ThirdLevel id="930502" title="期权品种设置" Verification="" nameabbr="qqpzsz" class="FIS.Futures.V8S.Manage.OptionSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="14"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="930507" title="清算席位品种设置" Verification="" nameabbr="qsxwpzsz" class="FIS.Futures.V8S.Manage.SeatCategorySet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="18"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9306" title="交易合约" Verification="" nameabbr="jyhy" class="" formproperty="" namespace="">
+					<ThirdLevel id="930601" title="期货合约" Verification="" nameabbr="qhhy" class="FIS.Futures.V8S.Manage.FuturesContractSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="20"/>
+					</ThirdLevel>
+					<ThirdLevel id="930602" title="期权合约" Verification="" nameabbr="qqhy" class="FIS.Futures.V8S.Manage.OptionContractSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="21"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9307" title="系统设置" Verification="" nameabbr="xtsz" class="" formproperty="" namespace="">
+					<ThirdLevel id="930702" title="参数设置" Verification=""  nameabbr="cssz" class="FIS.Futures.V8S.Manage.ParaManage" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="26"/>
+					</ThirdLevel>
+					<ThirdLevel id="930703" title="数据字典" Verification=""  nameabbr="sjzd" class="FIS.Futures.V8S.Manage.DicQuery" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="27"/>
+					</ThirdLevel>
+					<ThirdLevel id="930704" title="交易所设置" Verification="" nameabbr="jyssz" class="FIS.Futures.V8S.Manage.ExchangeSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="28"/>
+					</ThirdLevel>
+					<ThirdLevel id="930705" title="清算席位设置" Verification="" nameabbr="qsxwsz" class="FIS.Futures.V8S.Manage.BalanceSeatSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="29"/>
+					</ThirdLevel>
+					<ThirdLevel id="930706" title="交易日设置" Verification="" nameabbr="jyrsz" class="FIS.Futures.V8S.Manage.ExchangeDateSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="30"/>
+					</ThirdLevel>
+					<ThirdLevel id="930707" title="文档模板设置" Verification="" nameabbr="wdmbsz" class="FIS.Futures.V8S.Manage.DocumentTemplateSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="31"/>
+					</ThirdLevel>												
+					<ThirdLevel id="900604" title="客户类设置" Verification="" nameabbr="khlsz" class="FIS.Futures.V8S.Account.ClientClassSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="33"/>
+					</ThirdLevel>
+						<ThirdLevel id="900605" title="工作站点设置" Verification="" nameabbr="gzzdsz" class="FIS.Futures.V8S.Account.WorkStationSet" formproperty="" namespace="FIS.Futures.V8S.Account">
+					    <Permission index="34"/>
+					</ThirdLevel>
+					<ThirdLevel id="930711" title="期货公司结算账户" Verification="" nameabbr="qhgsjszh" class="FIS.Futures.V8S.Manage.BrokerBankAccount" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						    <Permission index="35"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9308" title="银期参数管理" Verification="" nameabbr="yqcsgl" class="" formproperty="" namespace="">
+				     <ThirdLevel id="930801" title="银行代码查询" Verification="" nameabbr="yhdmcx" class="FIS.Futures.V8S.Manage.BankCodeQuery" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						    <Permission index="1"/>
+					 </ThirdLevel>
+					  <ThirdLevel id="930802" title="银行参数设置" Verification="" nameabbr="yhcssz" class="FIS.Futures.V8S.Manage.BankParamSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						    <Permission index="2"/>
+					 </ThirdLevel>
+					  <ThirdLevel id="930803" title="银期转账返回代码设置" Verification="" nameabbr="yqzzfhdmsz" class="FIS.Futures.V8S.Manage.TransferRetCodeSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						    <Permission index="3"/>
+					 </ThirdLevel>
+					  <ThirdLevel id="930804" title="银期转账参数设置" Verification="" nameabbr="yqzzcssz" class="FIS.Futures.V8S.Manage.BankTransferParamSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						    <Permission index="4"/>
+					 </ThirdLevel>
+				</SecondLevel>
+			</FirstLevel>
+			
+			<FirstLevel id="94" Module="5" title="数据中心" Verification="" nameabbr="sjzx" ModulePic="sjzx.png" dll="FIS.Futures.V8S.Data.dll" namespace="">
+				<SecondLevel id="9401" title="数据分发" Verification="" nameabbr="sjff" class="" formproperty="" namespace="">
+					<ThirdLevel id="940101" title="数据分发导入设置" Verification=""  nameabbr="sjffdrsz" class="FIS.Futures.V8S.Data.DataDispatchImportSet" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="940102" title="数据分发导出设置" Verification=""  nameabbr="sjffdcsz" class="FIS.Futures.V8S.Data.DataDispatchExportSet" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="2"/>
+					</ThirdLevel>
+					<ThirdLevel id="940103" title="数据分发导入" Verification=""  nameabbr="sjffdr" class="FIS.Futures.V8S.Data.DataDispatchImport" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="3"/>
+					</ThirdLevel>
+					<ThirdLevel id="940104" title="数据分发导出" Verification=""  nameabbr="sjffdc" class="FIS.Futures.V8S.Data.DataDispatchExport" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="4"/>
+					</ThirdLevel>
+					<ThirdLevel id="940105" title="数据分发查询" Verification=""  nameabbr="sjffcx" class="FIS.Futures.V8S.Data.DataDispatchQuery" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="5"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9403" title="操作日志" Verification="" nameabbr="czrz" class="" formproperty="" namespace="">
+					<ThirdLevel id="940301" title="操作日志查询" Verification=""  nameabbr="czrzcx" class="FIS.Futures.V8S.Data.OperateLogQuery" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="6"/>
+					</ThirdLevel>
+				</SecondLevel>
+				<SecondLevel id="9405" title="客户报表" Verification="" nameabbr="khbb" class="" formproperty="" namespace="">
+					<ThirdLevel id="940501" title="客户持仓汇总" Verification=""  nameabbr="khcchz" class="FIS.Futures.V8S.Data.CustomerHoldTotal" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="7"/>
+					</ThirdLevel>
+					<ThirdLevel id="940502" title="客户持仓明细" Verification=""  nameabbr="khccmx" class="FIS.Futures.V8S.Data.CustomerHoldDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="8"/>
+					</ThirdLevel>
+					<ThirdLevel id="940503" title="客户成交明细" Verification=""  nameabbr="khcjmx" class="FIS.Futures.V8S.Data.CustomerDealDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="9"/>
+					</ThirdLevel>
+					<ThirdLevel id="940504" title="客户资金对账" Verification=""  nameabbr="khzjdz" class="FIS.Futures.V8S.Data.CustomerCheckDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="10"/>
+					</ThirdLevel>
+					<ThirdLevel id="940505" title="客户出入金明细" Verification=""  nameabbr="khcrjmx" class="FIS.Futures.V8S.Data.CustomerIOMoneyDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="11"/>
+					</ThirdLevel>
+					
+					<ThirdLevel id="940506" title="客户平仓明细" Verification=""  nameabbr="khpcmx" class="FIS.Futures.V8S.Data.CustomerCloseDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="12"/>
+					</ThirdLevel>
+					<ThirdLevel id="940507" title="客户套利组合明细" Verification=""  nameabbr="khzhtlmx" class="FIS.Futures.V8S.Data.CustomerArbtrgComboDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="13"/>
+					</ThirdLevel>
+					
+				</SecondLevel>
+				
+				<SecondLevel id="9406" title="席位报表" Verification="" nameabbr="xwbb" class="" formproperty="" namespace="">
+					<ThirdLevel id="940601" title="席位持仓汇总" Verification=""  nameabbr="xwcchz" class="FIS.Futures.V8S.Data.SeatHoldTotal" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="15"/>
+					</ThirdLevel>
+					<ThirdLevel id="940602" title="席位资金汇总" Verification=""  nameabbr="xwzjhz" class="FIS.Futures.V8S.Data.SeatFundTotal" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="16"/>
+					</ThirdLevel>
+					<ThirdLevel id="940603" title="席位出入金明细" Verification=""  nameabbr="xwcrjcx" class="FIS.Futures.V8S.Data.SeatIOMoneyDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="17"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+				<SecondLevel id="9408" title="OTC报表" Verification="" nameabbr="otcbb" class="" formproperty="" namespace="">
+					<ThirdLevel id="940801" title="客户每日盯市报告" Verification=""  nameabbr="khmrdsbg" class="FIS.Futures.V8S.Data.OTCCustomerDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="23"/>
+					</ThirdLevel>
+					<ThirdLevel id="940802" title="OTC客户持仓变化流水表" Verification=""  nameabbr="otckhccbhlsb" class="FIS.Futures.V8S.Data.OTCCustomerPositionDetail" formproperty="" namespace="FIS.Futures.V8S.Data"> 
+					    <Permission index="24"/>
+					</ThirdLevel>
+					<ThirdLevel id="940803" title="OTC客户资金对账表" Verification=""  nameabbr="otckhzjdzb" class="FIS.Futures.V8S.Data.OTCCustomerFundCheck" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="25"/>
+					</ThirdLevel>
+					<ThirdLevel id="940804" title="OTC期权对冲报表" Verification=""  nameabbr="otcqqdcbb" class="FIS.Futures.V8S.Data.OTCOptionhedge" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="26"/>
+					</ThirdLevel>
+					<ThirdLevel id="940805" title="OTC投资清算报告" Verification="" nameabbr="otctzqsbg" class="FIS.Futures.V8S.Data.OTCInvestOptionReport" formproperty="" namespace="FIS.Futures.V8S.Data">
+					   <Permission index="27"/>
+					</ThirdLevel>
+					<ThirdLevel id="940806" title="OTC做市商权利金报表" Verification="" nameabbr="otczssqljbg" class="FIS.Futures.V8S.Data.OTCMMPremiumReport" formproperty="" namespace="FIS.Futures.V8S.Data">
+					   <Permission index="28"/>
+					</ThirdLevel>
+				</SecondLevel>				
+				<SecondLevel id="9409" title="结算单" Verification="" nameabbr="jsd" class="" formproperty="" namespace="">
+					<ThirdLevel id="940901" title="结算单生成" Verification=""  nameabbr="jsdsc" class="FIS.Futures.V8S.Data.SettleSheetGene" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="29"/>
+					</ThirdLevel>
+					<ThirdLevel id="940902" title="阶段结算单生成" Verification=""  nameabbr="jdjsdsc" class="FIS.Futures.V8S.Data.SettleSheetGeneT" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="30"/>
+					</ThirdLevel>
+					<ThirdLevel id="940903" title="结算单生成设置" Verification=""  nameabbr="jsdscsz" class="FIS.Futures.V8S.Data.SettleSheetGeneSet" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="31"/>
+					</ThirdLevel>
+						<ThirdLevel id="940904" title="结算单查询" Verification=""  nameabbr="jsdcx" class="FIS.Futures.V8S.Data.SettleSheetQuery" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="32"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+				<SecondLevel id="9411" title="结算结果" Verification="" nameabbr="jsjg" class="" formproperty="" namespace="">
+					<ThirdLevel id="941101" title="结算结果导出" Verification=""  nameabbr="jsjgdc" class="FIS.Futures.V8S.Data.CSRCSubmitted" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="941102" title="结算结果导出设置" Verification=""  nameabbr="jsjgdcsz" class="FIS.Futures.V8S.Data.SettleExportSet" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="2"/>
+					</ThirdLevel>
+				
+				</SecondLevel>
+				
+				<SecondLevel id="9412" title="中银报表" Verification="" nameabbr="zybb" class="" formproperty="" namespace="">
+					<ThirdLevel id="941201" title="期货持仓明细1" Verification=""  nameabbr="qhccmx1" class="FIS.Futures.V8S.Data.PositionDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="1"/>
+					</ThirdLevel>
+					<ThirdLevel id="941202" title="期货持仓明细2" Verification=""  nameabbr="qhccmx2" class="FIS.Futures.V8S.Data.PositionDetail2" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="2"/>
+					</ThirdLevel>
+					<ThirdLevel id="941203" title="期货成交明细" Verification=""  nameabbr="qhcjmx" class="FIS.Futures.V8S.Data.DealDetail" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="3"/>
+					</ThirdLevel>
+					<ThirdLevel id="941204" title="Daily MT950" Verification=""  nameabbr="dm" class="FIS.Futures.V8S.Data.DailyMT950" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="4"/>
+					</ThirdLevel>
+					<ThirdLevel id="941205" title="客户日结帐单" Verification=""  nameabbr="khrjsd" class="FIS.Futures.V8S.Data.ClinetSettleSheet" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="5"/>
+					</ThirdLevel>
+					<ThirdLevel id="941207" title="Cash Balances" Verification=""  nameabbr="cb" class="FIS.Futures.V8S.Data.CashBalances" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="6"/>
+					</ThirdLevel>
+					<ThirdLevel id="941208" title="Cash File and Notional Value" Verification=""  nameabbr="cfnv" class="FIS.Futures.V8S.Data.CashFile" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="7"/>
+					</ThirdLevel>
+					<ThirdLevel id="941209" title="Margin Excess Deficit" Verification=""  nameabbr="med" class="FIS.Futures.V8S.Data.MarginExcess" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="8"/>
+					</ThirdLevel>
+					<ThirdLevel id="941210" title="Position limit and weekly turnover limit" Verification=""  nameabbr="plawtl" class="FIS.Futures.V8S.Data.Positionlimit" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="9"/>
+					</ThirdLevel>
+					<ThirdLevel id="941211" title="客户本金设置" Verification=""  nameabbr="khbjsz" class="FIS.Futures.V8S.Data.principalSet" formproperty="" namespace="FIS.Futures.V8S.Data">
+					    <Permission index="10"/>
+					</ThirdLevel>
+				</SecondLevel>
+			</FirstLevel>
+			<!-- 资金平台 -->
+			<FirstLevel id="89" Module="7" title="银企直连" Verification="" nameabbr="yqzl" ModulePic="zhzx.png" dll="FIS.Futures.V8S.FP.BankCorpLink.dll" namespace="">
+				<SecondLevel id="890001" title="账户余额查询" Verification="" nameabbr="zhlscx" class="FIS.Futures.V8S.FP.BankCorpLink.AccBalance" formproperty="" namespace="FIS.Futures.V8S.FP.BankCorpLink">
+					<Permission index="1"/>
+				</SecondLevel>
+				<SecondLevel id="890002" title="账户流水查询" Verification="" nameabbr="zhlscx" class="FIS.Futures.V8S.FP.BankCorpLink.AccountDetails" formproperty="" namespace="FIS.Futures.V8S.FP.BankCorpLink">
+					<Permission index="2"/>
+				</SecondLevel>
+				<SecondLevel id="890003" title="交易指令查询" Verification="" nameabbr="dztzcx" class="FIS.Futures.V8S.FP.BankCorpLink.ArrivalNotice" formproperty="" namespace="FIS.Futures.V8S.FP.BankCorpLink">
+					<Permission index="3"/>
+				</SecondLevel>
+				<SecondLevel id="890004" title="转账监控" Verification="" nameabbr="zzjk" class="FIS.Futures.V8S.FP.BankCorpLink.TransferMonitorFP" formproperty="" namespace="FIS.Futures.V8S.FP.BankCorpLink">
+					<Permission index="4"/>
+				</SecondLevel>	
+				<SecondLevel id="890005" title="交易异常处理(暂不处理)" Verification="" nameabbr="jyyccl" class="FIS.Futures.V8S.FP.BankCorpLink.TransferException" formproperty="" namespace="FIS.Futures.V8S.FP.BankCorpLink">
+					<Permission index="5"/>
+				</SecondLevel>
+				<SecondLevel id="890006" title="银企业务流水查询" Verification="" nameabbr="yqywlscx" class="FIS.Futures.V8S.FP.BankCorpLink.CorpBankDetails" formproperty="" namespace="FIS.Futures.V8S.FP.BankCorpLink">
+					<Permission index="6"/>
+				</SecondLevel>
+				<SecondLevel id="890007" title="银企操作日志查询" Verification="" nameabbr="yqczrzcx" class="FIS.Futures.V8S.FP.BankCorpLink.CorpBankLogs" formproperty="" namespace="FIS.Futures.V8S.FP.BankCorpLink">
+					<Permission index="7"/>
+				</SecondLevel>
+			</FirstLevel>
+			
+			<FirstLevel id="88" Module="8" title="账户管理" Verification="" nameabbr="zhgl" ModulePic="zjzx.png" dll="FIS.Futures.V8S.FP.Account.dll" namespace="">
+				<SecondLevel id="880001" title="企业账户管理" Verification="" nameabbr="qyzhgl" class="FIS.Futures.V8S.FP.Account.CorpAccMaintain" formproperty="" namespace="FIS.Futures.V8S.FP.Account">
+					<Permission index="1"/>
+				</SecondLevel>	
+				<SecondLevel id="880002" title="第三方账户管理" Verification="" nameabbr="dsfzhgl" class="FIS.Futures.V8S.FP.Account.ThirdAccMaintain" formproperty="" namespace="FIS.Futures.V8S.FP.Account">
+					<Permission index="2"/>
+				</SecondLevel>
+				<!-- <SecondLevel id="880003" title="席位金账户管理" Verification="" nameabbr="xwjzhgl" class="FIS.Futures.V8S.FP.Account.SeatAccMaintain" formproperty="" namespace="FIS.Futures.V8S.FP.Account">
+				</SecondLevel> -->
+			</FirstLevel>
+
+			<FirstLevel id="87" Module="9" title="资金管理" Verification="" nameabbr="zjgl" ModulePic="jszx.png" dll="FIS.Futures.V8S.FP.FundFP.dll" namespace="">
+				<SecondLevel id="870002" title="银企资金调拨管理" Verification="" nameabbr="yqzjdbgl" class="FIS.Futures.V8S.FP.FundFP.FundTransferMgt" formproperty="" namespace="FIS.Futures.V8S.FP.FundFP">
+					<Permission index="1"/>
+				</SecondLevel>
+			</FirstLevel>
+			
+			<FirstLevel id="82" Module="14" title="系统管理" Verification="" nameabbr="xtgl" ModulePic="jszx.png" dll="FIS.Futures.V8S.FP.SystemFP.dll" namespace="">
+				<SecondLevel id="820002" title="银行参数管理" Verification="" nameabbr="yhcsgl" class="FIS.Futures.V8S.FP.SystemFP.BankParamMgt" formproperty="" namespace="FIS.Futures.V8S.FP.SystemFP">
+					<Permission index="2"/>
+				</SecondLevel>
+ 				
+<!-- 				<SecondLevel id="820003" title="银行代码管理" Verification="" nameabbr="yhdmgl" class="FIS.Futures.V8S.FP.SystemFP.BankCodeMgt" formproperty="" namespace="FIS.Futures.V8S.FP.SystemFP">
+				</SecondLevel> -->
+<!-- 				<SecondLevel id="820004" title="系统参数管理" Verification="" nameabbr="xtcxgl" class="FIS.Futures.V8S.FP.SystemFP.SystemParamMgt" formproperty="" namespace="FIS.Futures.V8S.FP.SystemFP">
+				</SecondLevel>
+				<SecondLevel id="820005" title="系统初始化" Verification="" nameabbr="xtcsh" class="FIS.Futures.V8S.FP.SystemFP.SystemInitMgt" formproperty="" namespace="FIS.Futures.V8S.FP.SystemFP">
+				</SecondLevel>		 -->
+				<SecondLevel id="820006" title="银行交易类型管理" Verification="" nameabbr="yhjylwgl" class="FIS.Futures.V8S.FP.SystemFP.BankTradeType" formproperty="" namespace="FIS.Futures.V8S.FP.SystemFP">
+					<Permission index="6"/>
+				</SecondLevel>
+				<ThirdLevel id="820007" title="转账返回代码设置" Verification="" nameabbr="zzfhdmsz" class="FIS.Futures.V8S.Manage.TransferRetCodeSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					<Permission index="7"/>
+				</ThirdLevel>
+				<SecondLevel id="820008" title="初始化" Verification="" nameabbr="csh" class="FIS.Futures.V8S.Settlement.DailyEndOperation" formproperty="" namespace="FIS.Futures.V8S.Settlement">
+					<Permission index="8"/>
+				</SecondLevel>
+				<SecondLevel id="8201" title="操作员" Verification="" nameabbr="czy" class="" formproperty="" namespace="">
+					<ThirdLevel id="820101" title="操作员会话" Verification="" nameabbr="czyhy" class="FIS.Futures.V8S.Manage.OpeSessionQuery" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						<Permission index="9"/>
+					</ThirdLevel>
+					<ThirdLevel id="820102" title="操作员设置" Verification="" nameabbr="czysz" class="FIS.Futures.V8S.Manage.OperatorSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+						<Permission index="10"/>
+					</ThirdLevel>
+					<ThirdLevel id="820103" title="部门设置" Verification="" nameabbr="bmsz" class="FIS.Futures.V8S.Manage.DepartmentSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="11"/>
+					</ThirdLevel>
+					<ThirdLevel id="820104" title="重置操作员密码" Verification=""  nameabbr="czczymm" class="FIS.Futures.V8S.Manage.PasswordChange" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="12"/>
+					</ThirdLevel>					
+					<ThirdLevel id="820105" title="操作员密码规则" Verification="" nameabbr="czymm" class="FIS.Futures.V8S.Manage.OperatorPasswordRegularSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="13"/>
+					</ThirdLevel>	
+				</SecondLevel>
+				<SecondLevel id="8202" title="授权管理" Verification="" nameabbr="sqgl" class="" formproperty="" namespace="">
+					<ThirdLevel id="820201" title="设置角色" Verification="" nameabbr="szjs" class="FIS.Futures.V8S.Manage.RoleSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="14"/>
+					</ThirdLevel>
+					<ThirdLevel id="820202" title="操作员授权" Verification="" nameabbr="czysq" class="FIS.Futures.V8S.Manage.RoleForOperator" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="15"/>
+					</ThirdLevel>
+					<ThirdLevel id="820203" title="操作员特殊授权" Verification="" nameabbr="czytssq" class="FIS.Futures.V8S.Manage.SPRoleForOperator" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="16"/>
+					</ThirdLevel>
+					<ThirdLevel id="820204" title="授权复核" Verification="" nameabbr="sqfh" class="FIS.Futures.V8S.Manage.PromessionCheck" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="17"/>
+					</ThirdLevel>
+				    <ThirdLevel id="820205" title="操作员对应客户" Verification="" nameabbr="czydykh" class="FIS.Futures.V8S.Manage.OperatorClientSet" formproperty="" namespace="FIS.Futures.V8S.Manage">
+					    <Permission index="18"/>
+					</ThirdLevel>
+				</SecondLevel>
+				
+				
+			</FirstLevel>
+		</System>
+	</LcCode>
+</Root>
