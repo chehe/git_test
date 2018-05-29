@@ -745,8 +745,6 @@
 					    <Permission index="18"/>
 					</ThirdLevel>
 				</SecondLevel>
-				
-				
 			</FirstLevel>
 		</System>
 	</LcCode>
